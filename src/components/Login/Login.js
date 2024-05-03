@@ -84,34 +84,6 @@ function Login() {
         </Grid>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         // <div>
         //     <div>
         //         <Card.Body>

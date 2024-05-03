@@ -31,11 +31,8 @@ function Header() {
                     variant='outlined'>
                     Login
                 </Button>
-                <Button className="loginButton"
-                    onClick={() => history.push('/signup')}
-                    variant='outlined'>
-                    SignUp
-                </Button>
+
+                
                 <Button className="loginButton"
                     onClick={() => history.push('/submit-property')}
                     variant='outlined'>

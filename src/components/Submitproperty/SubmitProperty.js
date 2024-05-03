@@ -14,7 +14,7 @@ function SubmitProperty() {
     const { currentUser, logout } = useAuth()
 
     async function handleLogout() {
-        setError("")
+        setError("Retry")
 
         try {
             await logout()
@@ -29,14 +29,14 @@ function SubmitProperty() {
 
     return (
         <div>
-        <Avatar style={avatarStyle}>
-                        <AddCircleOutlineOutlinedIcon />
-                    </Avatar>
-                    <h2>Profile</h2>
-                    {error && <h3>{error}</h3>}
-                    <strong>Email: </strong>{currentUser ? currentUser.email : history.push('/login')}
-                    <Link to="/update-profile"></Link>
-                    <Button onClick={() => history.push('/update-profile')} variant='contained' color='primary'>Update Profile</Button>
+            <Avatar style={avatarStyle}>
+                <AddCircleOutlineOutlinedIcon />
+            </Avatar>
+            <h2>Profile</h2>
+            {error && <h3>{error}</h3>}
+            <strong>Email: </strong>{currentUser ? currentUser.email : history.push('/login')}
+            <Link to="/update-profile"></Link>
+            <Button onClick={() => history.push('/update-profile')} variant='contained' color='primary'>Update Profile</Button>
             <Button onClick={handleLogout} variant='contained' color='primary'>Log Out</Button>
         </div>
     )

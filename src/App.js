@@ -24,6 +24,10 @@ function App() {
         <AuthProvider>
         <Switch>
 
+          <Route path="/">
+            <Home />
+          </Route>
+
           <Route path="/search">
             <SearchPage />
           </Route>
@@ -56,9 +60,7 @@ function App() {
 
           
 
-          <Route path="/">
-            <Home />
-          </Route>
+          
 
         </Switch>
         </AuthProvider>
